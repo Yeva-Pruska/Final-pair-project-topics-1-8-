@@ -83,3 +83,28 @@ switch(gameEditionType){
 }
 
 })
+
+//Етап 4 Кранч та вирізання фіч 
+let featureFound = false;
+while (featureFound === false) {
+    let featuresList = features.join(", ");
+    let answer = prompt("Видавництво вимагає вирізати фічу" + featuresList);
+    if (answer === null || answer.trim() === "") {
+        alert("Ви нічого не вводили. Сробуйте ще раз!");
+        continue;
+    }
+let lowerCaseFeatures = [];
+for (let i = 0; i < features.length; i++) {
+    lowerCaseFeatures.push(features[i].toLowerCase());
+}
+let answerLower = answer.toLowerCase();
+let foundIndex = lowerCaseFeatures.indexOf(answerLower);
+if (foundIndex !== -1) {
+    features.splice(foundIndex, 1);
+    costs.splice(foundIndex, 1);
+    bugs.splice(foundIndex, 1);
+
+    alert("Фічу успішно видалено!");
+    featureFound = true;
+}
+}
