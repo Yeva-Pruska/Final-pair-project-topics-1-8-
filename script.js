@@ -94,7 +94,7 @@ switch(gameEditionType){
 let featureFound = false;
 while (featureFound === false) {
     let featuresList = features.join(", ");
-    let answer = prompt("Видавництво вимагає вирізати фічу" + featuresList);
+    let answer = prompt("Видавництво вимагає вирізати фічу: " + featuresList);
     if (answer === null || answer.trim() === "") {
         alert("Ви нічого не вводили. Сробуйте ще раз!");
         continue;

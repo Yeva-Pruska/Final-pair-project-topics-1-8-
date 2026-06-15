@@ -1,5 +1,6 @@
 body{
     background-color: rgb(20, 17, 23);
+    background-image: url(background.png);
 }
 
 #btn{
@@ -7,14 +8,16 @@ body{
     height: 50px;
     border-radius: 5px;
     text-transform: uppercase;
-    border: none /*rgb(0, 0, 0) solid 2px */;
+    font-family: "Black Ops One";
+    letter-spacing: 2px;
+    border: none;
     background: linear-gradient(90deg, rgb(223, 92, 92) 0%,rgb(156, 80, 227) 100%);
     margin: 20px;
     box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.173);
     color: white;
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 750px;
     right: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
